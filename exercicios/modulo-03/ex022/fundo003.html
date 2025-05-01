@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posição dos Fundos</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            background-color: white;
+        }
+
+        div.bloco {
+            height: 200px;
+            border: 1px solid black;
+            border-radius: 20px;
+            margin: 10px;
+            background-image: url(imagens/wallpaper003.jpg);
+        }
+
+        #q1 {
+            background-position: left top;
+        }
+
+        #q2 {
+            background-position: right bottom;
+        }
+
+        #q3 {
+            background-position: center top;
+        }
+
+        #q4 {
+            background-position: center center;
+        }
+
+         #q5 {
+            background-position: left center;
+         }
+
+         div.teste-position {
+            border: 1px dashed black;
+            height: 98vh;
+            background-color: lightblue;
+            background-image: url(imagens/logo-css.png);
+            background-repeat: no-repeat;
+            background-size: 90px;
+            background-position: center center;
+        }
+
+    </style>
+</head>
+<body>
+    <p>background-position: left top;</p>
+    <div class="bloco" id="q1">
+    </div>
+
+    <p>background-position: right bottom;</p>
+    <div class="bloco" id="q2">
+    </div>
+
+    <p>background-position: center top;</p>
+    <div class="bloco" id="q3">
+    </div>
+
+    <p>background-position: center center;</p>
+    <div class="bloco" id="q4">
+    </div>
+
+    <p>background-position: left center;</p>
+    <div class="bloco" id="q5">
+    </div>
+    
+    <p>Teste de posição da imagem background</p>
+    <div class="teste-position"></div>
+</body>
+</html>

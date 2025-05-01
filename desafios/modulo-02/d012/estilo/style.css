@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+:root {
+    --font1: verdana, Geneva, Tahoma sans-serif;
+    --font2: "Passion One", serif;
+    --font3: "Sriracha", serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #aaa;
+    font-family: var(--font1);
+    
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--font2);
+    font-size: 6rem;
+}
+
+header > p {
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+header a, footer a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+section {
+    font-family: var(--font3);
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 2rem;
+    line-height: 2rem;
+}
+
+section > p {
+    font-size: 2rem;
+    padding-bottom: 2rem;
+}
+
+section.normal {
+    background-color: rgb(250, 250, 250);
+    color: black;
+}
+
+section.destaque {
+    background-color: #555;
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px black;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.destaque > p {
+    display: inline-block;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.514);
+    text-shadow: 1px 1px 0px black ;
+}
+
+section#img1 {
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+}
+
+section#img2 {
+    background-image: url(../imagens/background002.jpg);
+    background-position: left bottom;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Responsividade*/
+
+@media (max-width: 950px) {
+
+    header > h1 {
+        font-size: 5.5rem;
+    }
+
+    section > p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 750px) {
+
+    header > h1 {
+        font-size: 4.5rem;
+    }
+
+    section > p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 500px) {
+
+    header > h1 {
+        font-size: 3rem;
+    }
+
+    section > p {
+        font-size: 1rem;
+    }
+}
+
+
+

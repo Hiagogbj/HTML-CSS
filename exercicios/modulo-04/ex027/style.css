@@ -1,0 +1,218 @@
+@charset "UTF-8";
+
+
+
+.box {
+    border: 1px solid black;
+    height: 40px;
+    width: 50px;
+    background-color: lightslategray;
+}
+
+/* Flex*/
+.flex {
+    display: flex;
+    background-color: gray;
+    margin-bottom: 20px;
+}
+
+/* Column*/
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 50px;
+}
+
+.flex-column > span {
+    border: 1px solid black;
+}
+
+/* Wrap*/
+.wrap {
+    display: flex;
+ 
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.wrap > .box {
+    height: 40px;
+    border: 1px solid black;
+    width: 250px;
+}
+
+/* Justify Content*/
+.start,
+.center,
+.space-between,
+.space-around,
+.space-evenly,
+.end {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.start {
+    justify-content: start;
+}
+
+.center {
+    justify-content: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.space-evenly {
+    justify-content: space-evenly;
+}
+
+.end {
+    justify-content: end;
+}
+
+/* Align items*/
+.align-center,
+.flex-start,
+.flex-end,
+.stretch {
+    display: flex;
+    margin-bottom: 20px;
+    height: 200px;
+    border: 1px solid red;
+}
+
+.align-center .box,
+.flex-start .box,
+.flex-end .box,
+.stretch .box{
+    width: 150px;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.start {
+    align-items: flex-start;
+}
+
+.flex-end {
+    align-items: flex-end;
+}
+
+.stretch {
+    align-items: stretch;
+}
+
+.stretch .box {
+    height: auto;
+}
+
+/* Gap*/
+.gap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px solid black;
+    padding: 3px;
+    gap: 10px;
+}
+
+.gap .box {
+    width:32%;
+}
+
+/* Order */
+.order {
+    display: flex;
+}
+
+#one {
+    order: 3;
+}
+
+#two {
+    order: 1;
+}
+
+#three {
+    order: 2;
+}
+
+/* Grow*/
+.grow {
+    display: flex;
+}
+
+.grow .box {
+    flex: 1 1 auto; /* Se colocar apenas flex:1, também está certo.*/
+}
+
+.grow > .big {
+    flex: 2; 
+}
+
+/* Small */
+.shrink {
+    display: flex;
+}
+
+.shrink .box {
+    flex-grow:1;
+    flex-shrink: 1;
+    flex-basis: 250px;
+    width: auto;
+}
+
+.shrink .small {
+    flex-shrink: 3;
+}
+
+/* Basis */
+.basis {
+    display: flex;
+}
+
+.basis > .box {
+    flex-basis: 50px;
+}
+
+.basis > .big {
+    flex-grow: 1;
+}
+
+/* Shorthand */
+.shorthand {
+    display: flex;
+}
+
+.shorthand > .box {
+    flex: 1 1 100px;
+}
+
+.shorthand > .different {
+    flex: 3 1 400px;
+}
+
+/* Auto Alinhamento*/
+.auto-alinhamento {
+    display: flex;
+    align-items: center;
+    height: 300px;
+    border: 1px solid black;
+}
+
+.auto-alinhamento > .box {
+    width: 33%;
+}
+
+.auto-alinhamento > .different {
+    align-self: flex-start;
+}
